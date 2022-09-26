@@ -1,0 +1,105 @@
+.App-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mb {
+  margin-bottom: 10px;
+}
+
+.row {
+  display: flex;
+}
+
+.row > *:not(:first-child) {
+  margin-left: 30px;
+}
+
+.w-55 {
+  min-width: 55px;
+}
+
+.w-100 {
+  min-width: 100px;
+}
+
+.box-false, .box-true {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.box-false {
+  background: lightblue;
+}
+
+.box-true {
+  background: lightskyblue;
+}
+
+.example-main {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.info {
+  height: 175px;
+  display: flex;
+  flex-direction: column;
+}
+
+.example-main label {
+  margin: 5px 0;
+}
+
+.example-main label:last-of-type input {
+  margin-left: 22px;
+}
+
+.example-main button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.example-main button.highlight {
+  box-shadow: 0 4px 8px 0 rgba(155, 50, 50, 0.3), 0 6px 20px 0 rgba(155, 50, 50, 0.3);
+}
+
+.example-main input {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.example-main .example-list {
+  height: 400px;
+  padding: 10px;
+  margin: 10px;
+  overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #E9E9E9;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: lightblue; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: lightskyblue; 
+}
