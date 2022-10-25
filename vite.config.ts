@@ -5,6 +5,12 @@ import dts from "vite-plugin-dts";
 
 
 export default defineConfig({
+  publicDir: false,
+  optimizeDeps: {
+    exclude: [
+      "react-app-env.d.ts"
+    ]
+  },
   plugins: [
     react(),
     dts({
@@ -19,10 +25,11 @@ export default defineConfig({
       fileName: (format) => `react-hook-data-structure.${format}.js`,
     },
     rollupOptions: {
-      external: ["react"],
+      external: ["react", "react-dom"],
       output: {
         globals: {
           react: "React",
+          "react-dom": "ReactDOM"
         },
       },
     },
